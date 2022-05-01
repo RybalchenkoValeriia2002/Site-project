@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Агата Кристи</title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="description" content="Сайт о жизни и творчестве Агаты Кристи">
+<meta name="Keywords" content="Агата Кристи, Пуаро, Марпл, Бересфорды, Произведения Агаты Кристи, 10 негретят, Убийство на поле для гольфа, Убийство по алфавиту, Убийство в Восточном экспрессе, Детективы"> 
+    <link href="images/logo1.ico" rel="shortcut icon">
+    <link href="css/style2.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+    $("body").css("display", "none");
+
+    $("body").fadeIn(2000);
+
+	$("a.transition").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("body").fadeOut(1000, redirectPage);
+	});
+
+	function redirectPage() {
+		window.location = linkLocation;
+	}
+});
+</script>
+</head>
+<body>
+    
+     
+
+     <input type="checkbox" id="nav-toggle" hidden>
+    <!-- 
+    Выдвижную панель размещаете ниже
+    флажка (checkbox), но не обязательно 
+    непосредственно после него, например
+    можно и в конце страницы
+    -->
+    <nav class="nav">
+        <!-- 
+    Метка с именем `id` чекбокса в `for` атрибуте
+    Символ Unicode 'TRIGRAM FOR HEAVEN' (U+2630)
+    Пустой атрибут `onclick` используем для исправления бага в iOS < 6.0
+    См: http://timpietrusky.com/advanced-checkbox-hack 
+    -->
+        <label for="nav-toggle" class="nav-toggle" onclick></label>
+        <!-- 
+    Здесь размещаете любую разметку,
+    если это меню, то скорее всего неупорядоченный список <ul>
+    -->
+        <h2 class="logo"> 
+            <a href="index.html">Агата Кристи</a> 
+        </h2>
+        <ul>
+            <li><a href="index.html" >Главная</a>
+            <li><a href="life.html"class="transition">Биография</a>
+            <li><a href="book.html"class="transition">Произведения</a>
+            <li><a href="pers.html">Главные герои</a>
+            <li><a href="film.html"class="transition">Фильмы и сериалы</a>
+            <li><a href="games.html"class="transition">Игры</a>
+        </ul>
+    </nav>
+
+    <div class="mask-content"></div>
+	
+   <div class="header">
+      <div class="for-sticky">
+        <div class="col-md-2 col-xs-6 logo">
+          <a href="index.html"><img alt="logo" class="logo-nav" src="images/logo1.png"></a>
+        </div>
+      </div>
+          </div>
+    
+      <div class="main-3">  
+    </div>
+    <iframe id="otpwgt-undefined47508" src="https://onlinetestpad.com/hrxpnzjxz7p7s" frameborder="0" style="width:100%;" onload="var f = document.getElementById('otpwgt-undefined47508'); var h = 0; var listener = function (event) { if (event.origin.indexOf('onlinetestpad') == -1) { return; }; h = parseInt(event.data); if (isNaN(h)) h = 400; f.style.height = h + 'px'; }; function addEvent(elem, evnt, func) { if (elem.addEventListener) { elem.addEventListener(evnt, func, false); } else if (elem.attachEvent) { elem.attachEvent('on' + evnt, func); } else { elem['on' + evnt] = func; } }; addEvent(window, 'message', listener);" scrolling="no" ></iframe>
+    <footer>
+          <div class="footer-top">
+            <ul class="socials">
+              <li class="vk">
+                <a href="https://vk.com/annet_z8" data-hover="Анна Зуйкова">Вконтакте</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-bottom">
+            <div class="container">
+              <div class="row">
+                <img src="images/logo2.png" alt="logo bottom" class="center-block"  text-align="center">
+              </div>
+            </div>
+          </div>
+        </footer>
+    
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script> 
+</body>
+
+</html>

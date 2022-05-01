@@ -1,0 +1,370 @@
+@font-face{
+    font-family: 'Poiret One';
+    src:url('../fonts/PoiretOne-Regular.ttf');
+}
+
+@keyframes t {
+  0%   { transform: translate(0, 0); }
+  75%  { transform: translate(100px, 0); }
+  100% { transform: translate(0, 0); }
+}
+        @keyframes t1 {
+0%   { transform: translate(0, 0); }
+75%  { transform: translate(500px, 0); }
+100% { transform: translate(0, 0); }
+}
+.t { 
+    animation: t 20s linear infinite;
+        }
+body {
+    font-size: 10px;
+}
+
+
+input{
+    font-family:'Poiret One', cursive;
+    font-size: 15pt;
+    font-weight: bold;
+}
+.logo{
+   padding: 6px 0 10px 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 55px;
+  display: block;
+}
+.gu{
+ float: left;   
+}
+#hide, #hide1, #hide2, #hide3, #hide4, #hide5{
+background: #ffffff;
+width: 100px;
+height: 30px;
+border-radius: 20px;
+border:#ffffff;
+font-size: 15pt;
+color: black;
+left: 40%;
+    font-family: 'Poiret One', cursive;
+    
+}
+.childhood, .puaro, .death, .husband1, .husband2, .Prop{           
+margin:0 25% 0 25%;
+width:50%;
+background-color:#dedede;
+height: auto;
+display: none;
+position: absolute;
+z-index: 10000;
+    font-size: 15pt;
+    z-index: 12;
+    border-radius: 30px;
+}
+h2{
+font-size: 15pt;
+padding: 15px;
+font-family: 'Poiret One', cursive;
+line-height: 1.5;
+    margin: 15px;
+}
+.one{
+background-color: darksalmon;
+width: 70px;
+height: 30px;     
+}
+#mask {
+background-color:black;
+height:450%;
+position:absolute;
+width:100%;
+top:0;
+left:0;
+z-index: 11;
+opacity: 0.5;
+display: none;
+    
+   
+}
+header{
+background-image:url(../img1/20.jpg);
+height: 700px;
+background-size: cover;
+z-index: -1; 
+    
+}
+nav{
+position: fixed;
+bottom: 0;
+width: 100%;
+height: 50px;
+opacity: 0.8;
+z-index: 1;
+top: 0;
+left: 0;
+border-bottom: 1px solid #f1f1f1;
+display: block;
+padding: 0px 15px 5px 15px;
+background: #ffffff;  
+
+}
+ ul li {
+list-style-type: none;
+height: auto;   
+}
+ul {
+margin: 0;
+padding: 0;
+display: flex;
+height: 50px;
+align-items: center;
+justify-content: space-around;
+}
+a {
+font-size: 18pt;
+text-decoration:none;
+color: #000000;
+text-align: center; 
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+}
+a:hover{
+text-decoration: underline;
+}
+main{
+height: auto;
+background-color: #f6f6f6;
+    position: absolute;
+    width: 100%;
+}
+table {
+    width: 100%; 
+    background: #f6f6f6 ; 
+    color: white; 
+    border: #f6f6f6 ;
+    text-align: center;
+    padding: 10px 10% 10% 10%;
+   }
+   td, th {
+    background:#f6f6f6 ;
+    padding: 5px; 
+    width: 20%;
+       height: 300px;
+       border: #f6f6f6 ;
+       text-align: center;
+       
+   }
+.footer-top{
+  width: 100%;
+  text-align: center;
+  color: #cccccc;
+  display: table;
+}
+.socials{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.socials * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.socials li {
+  display: inline-block;
+  list-style: outside none none;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  font-size: 18px;
+}
+
+.socials a {
+  padding: 0.3em 0.8em;
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin: 0;
+  text-decoration: none;
+  padding: 25px 0;
+  width: 100%;
+}
+
+.socials a:before,
+.socials a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.socials a:before {
+  bottom: 100%;
+  display: block;
+  height: 3px;
+  width: 100%;
+  content: "";
+}
+
+.socials a:after {
+  padding: 0.3em 0.8em;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  content: attr(data-hover);
+  color: white;
+  white-space: nowrap;
+  width: 100%;
+  padding: 25px 0;
+    font-family: 'Poiret One', cursive;
+}
+
+.socials li:hover a,
+.socials .current a {
+  transform: translateY(100%);
+}
+
+.vk{
+  background: #969696;
+  /*padding: 20px 0;*/
+}
+.vk a:after{
+  background-color: #527bbb;
+}
+footer{
+    height: auto;
+    width: 100%;
+    position: absolute;
+}
+@media screen and (max-width:800px) {
+     @keyframes t1 {
+0%   { transform: translate(0, 0); }
+75%  { transform: translate(300px, 0); }
+100% { transform: translate(0, 0); }
+}
+ header{
+background-image:url(../img1/20-640.jpg);
+height: 350px;
+background-size: auto;
+     width: 100%;
+z-index: -1; 
+    
+} 
+    .bc,.t{
+        width: 60px;
+    }
+    .dd, .df, .bb{
+  height: 200px;
+    width: 150px;
+    } 
+    .ab, .cd{
+        width: 250px;
+        height: auto;
+    }
+    .aa, .o, .cc{
+        height: 80px;
+    }
+    .de, .r{
+        height: 120px;
+    }
+    
+    table {
+    width: 100%; 
+    background: #f6f6f6 ; 
+    color: white; 
+    border: #f6f6f6 ;
+    text-align: center;
+    padding: 10px 0 10px 0;
+   }
+   td {
+    background:#f6f6f6 ;
+    padding: 0; 
+    width: 50%;
+       height: 300px;
+       border: #f6f6f6 ;
+       text-align: center;
+       
+   }
+   
+    a {
+font-size: 13pt;
+    }
+    h2{
+        font-size: 10pt;
+    }
+    #hide, #hide1, #hide2, #hide3, #hide4, #hide5{
+
+width: 70px;
+height: 20px;
+font-size: 10pt;
+color: black;
+left: 30%;
+font-family: 'Poiret One', cursive;  
+}
+}
+@media screen and (min-width:800px) and (max-width:1080px) {
+ header{
+background-image:url(../img1/20.jpg);
+height: 500px;
+background-size: auto;
+     background-repeat: no-repeat;
+     width: 100%;
+z-index: -1; 
+    
+} 
+   .bc,.t{
+        width: 60px;
+    }
+    .dd, .df, .bb{
+  height: 200px;
+    width: 150px;
+    } 
+    .ab, .cd{
+        width: 250px;
+        height: auto;
+    }
+    .aa, .o, .cc{
+        height: 80px;
+    }
+    .de, .r{
+        height: 120px;
+    }
+    
+    table {
+    width: 100%; 
+    background: #f6f6f6 ; 
+    color: white; 
+    border: #f6f6f6 ;
+    text-align: center;
+    padding: 10px 0 10px 0;
+   }
+   td {
+    background:#f6f6f6 ;
+    padding: 0; 
+    width: 50%;
+       height: 300px;
+       border: #f6f6f6 ;
+       text-align: center;
+       
+   }
+   
+    a {
+font-size: 13pt;
+    }
+    h2{
+        font-size: 10pt;
+    }
+    #hide, #hide1, #hide2, #hide3, #hide4, #hide5{
+
+width: 70px;
+height: 20px;
+font-size: 10pt;
+color: black;
+left: 30%;
+font-family: 'Poiret One', cursive;  
+}
+}
